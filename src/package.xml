@@ -6,15 +6,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>ApexComponent</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>ApexPage</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ApexTrigger</name>
     </types>
     <types>
         <members>*</members>
@@ -30,18 +22,10 @@
     </types>
     <types>
         <members>*</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>CustomObjectTranslation</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>CustomTab</name>
     </types>
     <types>
-    <members>*</members>
+        <members>*</members>
         <name>Layout</name>
     </types>
     <types>
@@ -50,37 +34,7 @@
     </types>
     <types>
         <members>*</members>
-        <name>QuickAction</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>ReportType</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>StaticResource</name>
     </types>
-    <!-- Add components and uncomment -->
-    <!--
-    <types>
-        <members>Sample_Documents</members>
-        <members>Sample_Documents/logo.png</members>
-        <name>Document</name>
-    </types>
-    <types>
-        <members>APP_DASHBOARDS_FOLDER</members>
-        <members>APP_DASHBOARDS_FOLDER/DASHBOARD_NAME</members>
-        <name>Dashboard</name>
-    </types>
-    <types>
-        <members>APP_REPORTS_FOLDER</members>
-        <members>APP_REPORTS_FOLDER/FOLDER_NAME</members>
-        <name>Report</name>
-    </types>
-    <types>
-        <members>OBJECT__NAME__C</members>
-        <name>Workflow</name>
-    </types>
-    -->
     <version>33.0</version>
 </Package>

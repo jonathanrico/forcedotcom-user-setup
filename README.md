@@ -1,31 +1,28 @@
-Sample App
+Force.com User Setup
 ===
 
-###Sample App Description
+###Description
 
-Description goes here..
+Use this project to initialize your Salesforce org with different user types.
+This package uses the RandomUserMe api to generate fake data and even upload
+chatter photos to the user profiles!
 
 ---
 ###Developers :
 
-#### How to use this template:
+#### Using the User Setup Utils :
 
-1. Start by cloning this template into a new folder
-`git clone https://github.com/jonathanrico/forcedotcom-project.git my-new-project`
-2. Cd to your new project directory and open this folder in your favorite text editor.
-`cd my-new-project`
-3. If you decide to fork this project, you'll have to remove the origin from the original repo
-`git remote rm origin`
-4. Link your project to an existing remote repository
-`git remote add origin https://github.com/yourusername/my-new-project.git`
+```
+UserSetupUtils.UserSetupParams myUserParams = new UserSetupUtils.UserSetupParams();
+myUserParams.email = 'youremailaddress@yourdomain.com';
+myUserParams.password = 'somepassword';
+myUserParams.profileName = 'Standard User'; //A valid profile name
+myUserParams.userType = 'MyUserType'; //A type that will be used for the user name
+myUserParams.permissionSet = 'LMS_Publisher'; //A valid permission set API Name
+myUserParams.totalUsers = 2; //Total number of users you want to create
 
-
-#### How to initialize your Force.com project :
-
-1. Make sure ant is installed in your local box
-2. Update your credentials by making a copy of the sample-sfdc-build.properties file and renaming it to "sfdc-build.properties"
-3. Retrieve metadata by going to the build folder `cd build` and running the retrieve target `ant retrieve`
-4. Remove any of the metadata folders that are not being used by your project
+UserSetupUtils.createUsers(myUserParams);
+```
 
 #### How to deploy the application using Ant :
 
@@ -34,7 +31,3 @@ Description goes here..
 2. Navigate to the build folder using the terminal or command prompt
 3. If you're using **OS X** run the following command : `sh build.sh`
 4. If you want to run the ant target directly use the following command : `ant deploy -DrunAllTests=false -DcheckOnly=false
-
-#### How to create new files :
-
-For now you'll have to create them in Salesforce and then run the retrieve target or create them manually in your editor.
