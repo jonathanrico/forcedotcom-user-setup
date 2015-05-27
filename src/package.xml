@@ -36,5 +36,9 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+    <types>
+        <members>RandomUserMe</members>
+        <name>RemoteSiteSetting</name>
+    </types>
     <version>33.0</version>
 </Package>
