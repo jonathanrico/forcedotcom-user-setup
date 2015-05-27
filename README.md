@@ -24,7 +24,7 @@ myUserParams.email = 'youremailaddress@yourdomain.com';
 myUserParams.password = 'S0mePassw0rd!124';
 myUserParams.profileName = 'Standard Platform User'; //A valid profile name
 myUserParams.userType = 'MyUserType'; //A type that will be used for the user name
-myUserParams.permissionSet = 'My_Permission_Set'; //A valid permission set API Name
+myUserParams.permissionSet = 'My_Permission_Set'; //A valid permission set API Name, remove if not needed
 myUserParams.totalUsers = 2; //Total number of users you want to create
 
 usrsetup.UserSetupUtils.createUsers(myUserParams);
