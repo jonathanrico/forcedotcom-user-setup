@@ -4,8 +4,8 @@ User Setup Utils
 ###Description
 
 Use this project to initialize your Salesforce Dev or Demo orgs with different users.
-This package uses the https://randomuser.me/ API to generate fake data and even upload
-chatter photos to the user profiles!
+This package uses the https://randomuser.me/ API to generate user records and even upload
+photos to their chatter profiles!
 
 ---
 ###Developers :
