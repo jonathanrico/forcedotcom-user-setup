@@ -22,9 +22,10 @@ Run the following code in the Developer Console:
 usrsetup.UserSetupUtils.UserSetupParams myUserParams = new usrsetup.UserSetupUtils.UserSetupParams();
 myUserParams.email = 'youremailaddress@yourdomain.com';
 myUserParams.password = 'S0mePassw0rd!124';
-myUserParams.profileName = 'Standard Platform User'; //A valid profile name
+myUserParams.profileName = 'Chatter Free User'; //A valid profile name
 myUserParams.userType = 'MyUserType'; //A type that will be used for the user name
-myUserParams.permissionSet = 'My_Permission_Set'; //A valid permission set API Name, remove if not needed
+//A valid permission set API Name, un-comment if needed
+//myUserParams.permissionSet = 'My_Permission_Set';
 myUserParams.totalUsers = 2; //Total number of users you want to create
 
 usrsetup.UserSetupUtils.createUsers(myUserParams);
