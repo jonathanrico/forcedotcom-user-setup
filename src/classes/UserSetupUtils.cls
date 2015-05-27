@@ -69,8 +69,10 @@ global class UserSetupUtils{
       }
 
       //Upload chatter pictures
-      uploadImages(newUsers, userImages, null);
-
+      if(!Test.isRunningTest()){
+          uploadImages(newUsers, userImages, null);
+      }
+      
       //Assign permission set
       Map<String,String> permissionSetAssignments = new Map<String,String>();
 
