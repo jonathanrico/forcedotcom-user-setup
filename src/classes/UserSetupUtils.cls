@@ -72,7 +72,7 @@ global class UserSetupUtils{
       if(!Test.isRunningTest()){
           uploadImages(newUsers, userImages, null);
       }
-      
+
       //Assign permission set
       Map<String,String> permissionSetAssignments = new Map<String,String>();
 
@@ -95,7 +95,7 @@ global class UserSetupUtils{
     private static List<Map<String, Object>> fetchRandomUserData(Integer totalResults){
         List<Map<String, Object>> results = new List<Map<String, Object>>();
         HttpRequest req = new HttpRequest();
-        req.setEndpoint('http://api.randomuser.me/?results='+totalResults);
+        req.setEndpoint('https://jrico-random-users.herokuapp.com/?nat=US&results='+totalResults);
         req.setMethod('GET');
         Http http = new Http();
         HTTPResponse res = http.send(req);
