@@ -4,8 +4,6 @@ User Setup Utils
 ###Description
 
 Use this project to initialize your Salesforce Dev or Demo orgs with different users.
-This package uses the https://randomuser.me/ API to generate user records and even upload
-photos to their chatter profiles!
 
 ---
 ###Developers :
@@ -14,7 +12,7 @@ photos to their chatter profiles!
 
 Install the managed package with the following link:
 
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000E62q
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1a000000E62v
 
 Run the following code in the Developer Console:
 
